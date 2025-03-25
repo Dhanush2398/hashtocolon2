@@ -767,7 +767,7 @@ hr {
 
 .cs-accent_bg,
 .cs-accent_bg_hover:hover {
-  background-color: #FF4A17;
+  background-color: rgba(255, 74, 23, 0.8); 
 }
 
 .cs-primary_bg,
