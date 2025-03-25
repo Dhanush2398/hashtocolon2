@@ -39,7 +39,7 @@ html {
   font-weight: 400;
   line-height: 1.6em;
   overflow-x: hidden;
-  background-color: #181818;
+  background-color: #000;
 }
 
 h1,
@@ -750,6 +750,7 @@ hr {
 .cs-accent_color,
 .cs-accent_color_hover:hover {
   color: #FF4A17;
+   
 }
 
 .cs-white_bg {
@@ -1813,7 +1814,7 @@ label {
 }
 .cs-shape_wrap_4 .cs-shape_4 {
   position: absolute;
-  background-color: #000;
+  background-color: #181818;
   border-radius: 50%;
 }
 .cs-shape_wrap_4 .cs-shape_4:nth-child(1) {
@@ -4311,7 +4312,7 @@ label {
     margin-right: 0;
   }
   .cs-site_branding img {
-    max-height: 32px;
+    max-height: 52px;
   }
   .cs-site_header.cs-style1 .cs-btn span {
     display: none;
@@ -5594,6 +5595,8 @@ label {
   gap: 60px;
   position: relative;
   overflow: hidden;
+  /* background-repeat: repeat-y; */
+  background-size: cover;
 }
 @media (max-width: 1600px) {
   .cs-hero.cs-style7 {
@@ -5602,6 +5605,8 @@ label {
 }
 @media (max-width: 991px) {
   .cs-hero.cs-style7 {
+    /* background-size: auto;
+    background-repeat: repeat; */
     padding: 160px 0 110px;
     gap: 20px;
     height: 890px;
@@ -5622,10 +5627,11 @@ label {
 }
 .cs-hero.cs-style7 .cs-hero_title {
   font-size: 100px;
-  font-weight: 700;
-  line-height: 1.3em;
+  font-weight: 800;
+  line-height: 1em;
   text-align: center;
   margin: 0;
+   
 }
 @media (max-width: 1400px) {
   .cs-hero.cs-style7 .cs-hero_title {
@@ -5644,24 +5650,27 @@ label {
 }
 @media (max-width: 575px) {
   .cs-hero.cs-style7 .cs-hero_title {
-    font-size: 42px;
+    font-size: 46px;
   }
 }
 @media (max-width: 400px) {
   .cs-hero.cs-style7 .cs-hero_title {
-    font-size: 36px;
+    font-size: 46px;
   }
 }
 .cs-hero.cs-style7 .cs-hero_subtitle {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 1.94em;
+  /* line-height: 1.94em; */
   max-width: 430px;
   margin: 0;
+  color: #FF4A17;
+ 
+     
 }
 @media (max-width: 991px) {
   .cs-hero.cs-style7 .cs-hero_subtitle {
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 30px;
     max-width: 520px;
   }
@@ -5722,7 +5731,7 @@ label {
 }
 @media (max-width: 575px) {
   .cs-hero.cs-style7 .cs-hero_img_1 {
-    display: none;
+    /* display: none; */
   }
 }
 .cs-hero.cs-style7 .cs-hero_img_2 {
@@ -6750,10 +6759,12 @@ label {
   position: relative;
   border-radius: 15px;
   display: block;
+    -webkit-filter: drop-shadow(0px 0px 30px rgba(255, 74, 23, 0.4));
+          filter: drop-shadow(0px 0px 30px rgba(255, 74, 23, 0.4));
 }
 .cs-card.cs-style1:hover {
-  -webkit-filter: drop-shadow(0px 0px 30px rgba(255, 74, 23, 0.5));
-          filter: drop-shadow(0px 0px 30px rgba(255, 74, 23, 0.5));
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(255, 74, 23, 0.9));
+          filter: drop-shadow(0px 0px 30px rgba(255, 74, 23, 0.9));
 }
 .cs-card.cs-style1 img {
 
@@ -6763,11 +6774,11 @@ label {
   position: absolute;
   left: 0;
   top: 0;
-  width: 250px;
-  height: 200px;
+  width: 100%;
+  height: 230px;
   border-radius: inherit;
   background: #000000;
-  opacity: 0.5;
+  opacity: 0.25;
   margin-top: 20px;
 }
 .cs-card.cs-style1 .cs-card_info {
@@ -7873,7 +7884,7 @@ label {
   z-index: 2;
 }
 .cs-funfact_wrap.cs-type1 {
-  margin-top: -130px;
+  margin-top: -60px;
 }
 .cs-funfact_wrap.cs-type2 {
   background: transparent;
@@ -9479,9 +9490,16 @@ html .ui-button.ui-state-disabled:active {
   height: 200px;
 }
 
+@media (max-width:580px) {
+  .cs-partner_logo img {
+    height: 98px;
+  }
+  
+}
+
 .cs-hobble img{
-  height: 200px;
- max-width: 250px;
+  height: 230px;
+ width: 100%;
 margin-top: 20px;
 }
 
@@ -9492,7 +9510,7 @@ margin-top: 20px;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.1); 
   z-index: 1;
 }
 
@@ -9500,4 +9518,15 @@ margin-top: 20px;
   position: relative;
   z-index: 2;
   color: #fff; 
+}
+
+.cs-portfolio_bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
