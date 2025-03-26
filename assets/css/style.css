@@ -9551,7 +9551,7 @@ margin-top: 20px;
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(225, 4, 4, 0.6);
+  box-shadow: 0 4px 10px rgba(225, 4, 4, 0.8);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
   border: 2px solid transparent;
 }
@@ -9559,7 +9559,7 @@ margin-top: 20px;
 
 .service-card:hover {
   transform: scale(1.05); 
-  box-shadow: 0 8px 20px rgba(225, 4, 4, 0.8); 
+  box-shadow: 0 8px 20px rgba(225, 4, 4, 1); 
   border: 2px solid rgba(225, 4, 4, 0.9); 
 }
 
@@ -9572,7 +9572,7 @@ margin-top: 20px;
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(225, 4, 4, 0.8);
+  box-shadow: 0 0 15px rgba(225, 4, 4, 0.9);
   z-index: -1;
   transition: all 0.3s ease-in-out;
 }
@@ -9589,7 +9589,7 @@ margin-top: 20px;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 40%;
+  height: 50%;
   background: rgba(0, 0, 0, 0.6);
   color: white;
   display: flex;
@@ -9600,11 +9600,13 @@ margin-top: 20px;
   transition: height 0.4s ease-in-out;
 }
 
-
 .service-icon {
   font-size: 35px;
   color: #f53905;
   margin-bottom: 8px;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 
